@@ -1,0 +1,11 @@
+{
+  "realm": "demo",
+  "realm-public-key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzoRyoFFlOfVGrnXT/mkJ+/fEGkl+gfBxus84etnFk+Ho6YMjmHW6EJtnEvjj1ewjy7x+YOA2rb/EOAgF/3C1b+58dkzkD8H1LJQZTyzf8MMsfqNSHF7VzDLuM7/x5NCMQZpOnWg6/ZETVozVJFln97Rw1uUAvpa75FfOAgUqVhVLHChH0atWKvxVSVPu8jekf1M+mhQLX2h2yV9nlSbdGiVSFv8Pp6Ys1S1kAhApRZNW2HMHYPSUEUW9gfhweDQxtLjvHc6XrDzi4SA5CLY2GCq8DKo5owdt0Z/HVUsTRLN/jWO+S0RUPR8pqD0+wLo+QOIRUAWdK5b93UdNE7ftQwIDAQAB",
+  "auth-server-url": "http://localhost:8080/auth",
+  "ssl-required": "external",
+  "resource": "hello",
+  "credentials": {
+    "secret": "d7d79bff-25f4-4875-86ae-c0748d3d719c"
+  },
+  "policy-enforcer": {}
+}

@@ -1,0 +1,762 @@
+2016-09-21 10:44:51,392 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.1.Final-redhat-1
+2016-09-21 10:44:51,576 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final-redhat-1
+2016-09-21 10:44:51,638 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: rh-sso 7.0.0.GA (WildFly Core 2.1.2.Final-redhat-1) starting
+2016-09-21 10:44:51,640 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.lwawt.macosx.LWCToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	gopherProxySet = false
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+	java.class.path = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/endorsed
+	java.ext.dirs = /Users/3109213S/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+	java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre
+	java.io.tmpdir = /var/folders/g7/sl0h442x5099w2w95xmdwpg40000gp/T/
+	java.library.path = /Users/3109213S/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_51-b16
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_51
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.51-b03
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0
+	jboss.host.name = 3109213-mac
+	jboss.modules.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = 3109213-mac
+	jboss.qualified.host.name = 3109213-mac.corp.ad.fmcna.com
+	jboss.server.base.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone
+	jboss.server.config.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/configuration
+	jboss.server.data.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/data
+	jboss.server.deploy.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/data/content
+	jboss.server.log.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/log
+	jboss.server.name = 3109213-mac
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/configuration/logging.properties
+	module.path = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/modules
+	org.jboss.boot.log.file = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.10.4
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/jboss-modules.jar -mp /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/modules org.jboss.as.standalone -Djboss.home.dir=/Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0 -Djboss.server.base.dir=/Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/bin
+	user.home = /Users/3109213S
+	user.language = en
+	user.name = 3109213
+	user.timezone = America/New_York
+2016-09-21 10:44:51,640 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/log/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/log/server.log -Dlogging.configuration=file:/Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/configuration/logging.properties 
+2016-09-21 10:44:52,496 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-09-21 10:44:52,516 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.3.6.Final-redhat-1
+2016-09-21 10:44:52,521 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.3.6.Final-redhat-1
+2016-09-21 10:44:52,550 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.18.Final-redhat-1
+2016-09-21 10:44:52,563 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 43) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-09-21 10:44:52,566 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 29) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2016-09-21 10:44:52,567 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 30) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-09-21 10:44:52,577 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 36) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-09-21 10:44:52,596 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) WFLYNAM0001: Activating Naming Subsystem
+2016-09-21 10:44:52,608 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 26) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-09-21 10:44:52,609 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 42) WFLYSEC0002: Activating Security Subsystem
+2016-09-21 10:44:52,613 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=4.9.6.Final-redhat-1
+2016-09-21 10:44:52,619 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 1.3.21.Final-redhat-1 starting
+2016-09-21 10:44:52,619 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 44) WFLYUT0003: Undertow 1.3.21.Final-redhat-1 starting
+2016-09-21 10:44:52,619 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.3.Final-redhat-1)
+2016-09-21 10:44:52,625 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-09-21 10:44:52,655 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2016-09-21 10:44:52,656 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-09-21 10:44:52,739 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 44) WFLYUT0014: Creating file handler for path '/Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-09-21 10:44:52,770 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2016-09-21 10:44:52,771 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2016-09-21 10:44:52,892 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2016-09-21 10:44:52,952 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2016-09-21 10:44:52,953 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2016-09-21 10:44:53,076 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/KeycloakDS]
+2016-09-21 10:44:53,076 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-09-21 10:44:53,207 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "keycloak-server.war" (runtime-name: "keycloak-server.war")
+2016-09-21 10:44:53,412 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.2.Final-redhat-1
+2016-09-21 10:44:53,759 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 49) WFLYCLINF0002: Started loginFailures cache from keycloak container
+2016-09-21 10:44:53,759 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0002: Started sessions cache from keycloak container
+2016-09-21 10:44:53,759 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 47) WFLYCLINF0002: Started work cache from keycloak container
+2016-09-21 10:44:53,759 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0002: Started users cache from keycloak container
+2016-09-21 10:44:53,760 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0002: Started realms cache from keycloak container
+2016-09-21 10:44:53,760 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 50) WFLYCLINF0002: Started offlineSessions cache from keycloak container
+2016-09-21 10:44:53,762 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 46) WFLYCLINF0002: Started realmVersions cache from keycloak container
+2016-09-21 10:44:54,295 INFO  [org.keycloak.services] (ServerService Thread Pool -- 52) KC-SERVICES0001: Loading config from /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/configuration/keycloak-server.json
+2016-09-21 10:44:56,257 INFO  [org.keycloak.connections.jpa.updater.liquibase.LiquibaseJpaUpdaterProvider] (ServerService Thread Pool -- 52) Initializing database schema
+2016-09-21 10:44:57,334 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 52) HHH000204: Processing PersistenceUnitInfo [
+	name: keycloak-default
+	...]
+2016-09-21 10:44:57,397 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 52) HHH000412: Hibernate Core {5.0.9.Final-redhat-1}
+2016-09-21 10:44:57,399 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 52) HHH000206: hibernate.properties not found
+2016-09-21 10:44:57,401 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 52) HHH000021: Bytecode provider name : javassist
+2016-09-21 10:44:57,441 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 52) HCANN000001: Hibernate Commons Annotations {5.0.1.Final-redhat-2}
+2016-09-21 10:44:57,588 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 52) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-09-21 10:44:57,594 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 52) HHH000431: Unable to determine H2 database version, certain features may not work
+2016-09-21 10:44:57,635 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 52) Envers integration enabled? : true
+2016-09-21 10:44:58,129 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 52) HV000001: Hibernate Validator 5.2.4.Final-redhat-1
+2016-09-21 10:44:58,959 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (ServerService Thread Pool -- 52) HHH000397: Using ASTQueryTranslatorFactory
+2016-09-21 10:44:59,528 INFO  [org.keycloak.services] (ServerService Thread Pool -- 52) KC-SERVICES0050: Initializing master realm
+2016-09-21 10:45:00,744 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:45:00,745 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002205: Adding provider class org.keycloak.services.filters.KeycloakTransactionCommitter from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:45:00,746 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002200: Adding class resource org.keycloak.services.resources.JsResource from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:45:00,746 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002200: Adding class resource org.keycloak.services.resources.ThemeResource from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:45:00,746 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002210: Adding provider singleton org.keycloak.services.util.ObjectMapperResolver from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:45:00,746 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.RealmsResource from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:45:00,746 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.ServerVersionResource from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:45:00,747 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.WelcomeResource from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:45:00,747 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.admin.AdminRoot from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:45:00,747 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.RobotsResource from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:45:00,827 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 52) WFLYUT0021: Registered web context: /auth
+2016-09-21 10:45:00,852 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "keycloak-server.war" (runtime-name : "keycloak-server.war")
+2016-09-21 10:45:00,953 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2016-09-21 10:45:00,954 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2016-09-21 10:45:00,954 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: rh-sso 7.0.0.GA (WildFly Core 2.1.2.Final-redhat-1) started in 9829ms - Started 416 of 782 services (526 services are lazy, passive or on-demand)
+2016-09-21 10:46:05,930 INFO  [org.keycloak.services] (default task-9) KC-SERVICES0077: Created initial admin user with username ssoadmin
+2016-09-21 10:52:45,415 WARN  [org.keycloak.events] (default task-51) type=LOGIN_ERROR, realmId=master, clientId=security-admin-console, userId=null, ipAddress=127.0.0.1, error=user_not_found, auth_method=openid-connect, auth_type=code, redirect_uri=http://localhost:8080/auth/admin/master/console/?redirect_fragment=%2Frealms%2Fdemo%2Fusers%2Fbd8d3267-cd46-4178-8446-22a7723bea91%2Fuser-credentials, code_id=0a9c04c3-fa9d-4777-886b-a246cb7bf69c, username=demo
+2016-09-21 10:58:37,013 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2016-09-21 10:58:37,033 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/KeycloakDS]
+2016-09-21 10:58:37,037 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (ServerService Thread Pool -- 55) IJ000615: Destroying active connection in pool: KeycloakDS (org.jboss.jca.adapters.jdbc.local.LocalManagedConnection@592ad585)
+2016-09-21 10:58:37,041 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 56) WFLYUT0022: Unregistered web context: /auth
+2016-09-21 10:58:37,047 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2016-09-21 10:58:37,048 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-09-21 10:58:37,050 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-09-21 10:58:37,051 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 58) WFLYCLINF0003: Stopped sessions cache from keycloak container
+2016-09-21 10:58:37,051 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0003: Stopped realms cache from keycloak container
+2016-09-21 10:58:37,051 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0003: Stopped realmVersions cache from keycloak container
+2016-09-21 10:58:37,055 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 57) WFLYCLINF0003: Stopped users cache from keycloak container
+2016-09-21 10:58:37,056 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment keycloak-server.war (runtime-name: keycloak-server.war) in 32ms
+2016-09-21 10:58:37,056 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0003: Stopped work cache from keycloak container
+2016-09-21 10:58:37,057 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTP listener default suspending
+2016-09-21 10:58:37,057 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 60) WFLYCLINF0003: Stopped offlineSessions cache from keycloak container
+2016-09-21 10:58:37,058 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2016-09-21 10:58:37,059 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 1.3.21.Final-redhat-1 stopping
+2016-09-21 10:58:37,060 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 61) WFLYCLINF0003: Stopped loginFailures cache from keycloak container
+2016-09-21 10:58:37,076 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: rh-sso 7.0.0.GA (WildFly Core 2.1.2.Final-redhat-1) stopped in 51ms
+2016-09-21 10:59:20,357 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.1.Final-redhat-1
+2016-09-21 10:59:20,531 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final-redhat-1
+2016-09-21 10:59:20,591 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: rh-sso 7.0.0.GA (WildFly Core 2.1.2.Final-redhat-1) starting
+2016-09-21 10:59:20,592 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.lwawt.macosx.LWCToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	gopherProxySet = false
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+	java.class.path = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/endorsed
+	java.ext.dirs = /Users/3109213S/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+	java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre
+	java.io.tmpdir = /var/folders/g7/sl0h442x5099w2w95xmdwpg40000gp/T/
+	java.library.path = /Users/3109213S/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_51-b16
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_51
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.51-b03
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0
+	jboss.host.name = 3109213-mac
+	jboss.modules.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = 3109213-mac
+	jboss.qualified.host.name = 3109213-mac.corp.ad.fmcna.com
+	jboss.server.base.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone
+	jboss.server.config.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/configuration
+	jboss.server.data.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/data
+	jboss.server.deploy.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/data/content
+	jboss.server.log.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/log
+	jboss.server.name = 3109213-mac
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/tmp
+	jboss.socket.binding.port-offset = 100
+	line.separator = 
+
+	logging.configuration = file:/Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/configuration/logging.properties
+	module.path = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/modules
+	org.jboss.boot.log.file = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.10.4
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/jboss-modules.jar -mp /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/modules org.jboss.as.standalone -Djboss.home.dir=/Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0 -Djboss.server.base.dir=/Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone -Djboss.socket.binding.port-offset=100
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/bin
+	user.home = /Users/3109213S
+	user.language = en
+	user.name = 3109213
+	user.timezone = America/New_York
+2016-09-21 10:59:20,593 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/log/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/log/server.log -Dlogging.configuration=file:/Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/configuration/logging.properties 
+2016-09-21 10:59:21,398 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-09-21 10:59:21,413 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.3.6.Final-redhat-1
+2016-09-21 10:59:21,419 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.3.6.Final-redhat-1
+2016-09-21 10:59:21,444 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 43) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-09-21 10:59:21,453 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 30) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-09-21 10:59:21,459 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 29) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2016-09-21 10:59:21,460 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 36) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-09-21 10:59:21,484 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) WFLYNAM0001: Activating Naming Subsystem
+2016-09-21 10:59:21,499 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 4.0.18.Final-redhat-1
+2016-09-21 10:59:21,501 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 42) WFLYSEC0002: Activating Security Subsystem
+2016-09-21 10:59:21,506 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=4.9.6.Final-redhat-1
+2016-09-21 10:59:21,512 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 44) WFLYUT0003: Undertow 1.3.21.Final-redhat-1 starting
+2016-09-21 10:59:21,512 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 1.3.21.Final-redhat-1 starting
+2016-09-21 10:59:21,514 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.3.Final-redhat-1)
+2016-09-21 10:59:21,519 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 26) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-09-21 10:59:21,527 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-09-21 10:59:21,561 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2016-09-21 10:59:21,561 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-09-21 10:59:21,657 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 44) WFLYUT0014: Creating file handler for path '/Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-09-21 10:59:21,682 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2016-09-21 10:59:21,684 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2016-09-21 10:59:21,717 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2016-09-21 10:59:21,717 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2016-09-21 10:59:21,771 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8180
+2016-09-21 10:59:21,860 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/KeycloakDS]
+2016-09-21 10:59:21,860 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-09-21 10:59:22,006 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "keycloak-server.war" (runtime-name: "keycloak-server.war")
+2016-09-21 10:59:22,161 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.2.Final-redhat-1
+2016-09-21 10:59:22,485 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 49) WFLYCLINF0002: Started users cache from keycloak container
+2016-09-21 10:59:22,485 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 46) WFLYCLINF0002: Started offlineSessions cache from keycloak container
+2016-09-21 10:59:22,485 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0002: Started sessions cache from keycloak container
+2016-09-21 10:59:22,485 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 50) WFLYCLINF0002: Started realms cache from keycloak container
+2016-09-21 10:59:22,485 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 47) WFLYCLINF0002: Started loginFailures cache from keycloak container
+2016-09-21 10:59:22,486 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0002: Started work cache from keycloak container
+2016-09-21 10:59:22,488 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0002: Started realmVersions cache from keycloak container
+2016-09-21 10:59:22,986 INFO  [org.keycloak.services] (ServerService Thread Pool -- 46) KC-SERVICES0001: Loading config from /Users/3109213S/Desktop/DEVHOME/TOOLS/jboss-sso-7.0x/rh-sso-7.0/standalone/configuration/keycloak-server.json
+2016-09-21 10:59:23,847 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 46) HHH000204: Processing PersistenceUnitInfo [
+	name: keycloak-default
+	...]
+2016-09-21 10:59:23,889 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 46) HHH000412: Hibernate Core {5.0.9.Final-redhat-1}
+2016-09-21 10:59:23,890 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 46) HHH000206: hibernate.properties not found
+2016-09-21 10:59:23,892 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 46) HHH000021: Bytecode provider name : javassist
+2016-09-21 10:59:23,916 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 46) HCANN000001: Hibernate Commons Annotations {5.0.1.Final-redhat-2}
+2016-09-21 10:59:24,017 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 46) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-09-21 10:59:24,021 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 46) HHH000431: Unable to determine H2 database version, certain features may not work
+2016-09-21 10:59:24,044 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 46) Envers integration enabled? : true
+2016-09-21 10:59:24,483 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 46) HV000001: Hibernate Validator 5.2.4.Final-redhat-1
+2016-09-21 10:59:25,006 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (ServerService Thread Pool -- 46) HHH000397: Using ASTQueryTranslatorFactory
+2016-09-21 10:59:25,839 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 46) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:59:25,841 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 46) RESTEASY002200: Adding class resource org.keycloak.services.resources.ThemeResource from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:59:25,841 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 46) RESTEASY002205: Adding provider class org.keycloak.services.filters.KeycloakTransactionCommitter from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:59:25,841 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 46) RESTEASY002200: Adding class resource org.keycloak.services.resources.JsResource from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:59:25,842 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 46) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.ServerVersionResource from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:59:25,842 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 46) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.RealmsResource from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:59:25,842 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 46) RESTEASY002210: Adding provider singleton org.keycloak.services.util.ObjectMapperResolver from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:59:25,842 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 46) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.RobotsResource from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:59:25,842 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 46) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.WelcomeResource from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:59:25,842 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 46) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.admin.AdminRoot from Application class org.keycloak.services.resources.KeycloakApplication
+2016-09-21 10:59:25,905 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 46) WFLYUT0021: Registered web context: /auth
+2016-09-21 10:59:25,925 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "keycloak-server.war" (runtime-name : "keycloak-server.war")
+2016-09-21 10:59:25,989 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:10090/management
+2016-09-21 10:59:25,989 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:10090
+2016-09-21 10:59:25,990 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: rh-sso 7.0.0.GA (WildFly Core 2.1.2.Final-redhat-1) started in 5896ms - Started 416 of 782 services (526 services are lazy, passive or on-demand)
+2016-09-21 11:52:49,112 WARN  [org.keycloak.events] (default task-86) type=REFRESH_TOKEN_ERROR, realmId=master, clientId=security-admin-console, userId=null, ipAddress=127.0.0.1, error=invalid_token, grant_type=refresh_token, client_auth_method=client-secret
+2016-09-21 11:58:18,503 WARN  [org.keycloak.connections.httpclient.DefaultHttpClientFactory] (default task-33) Truststore is disabled
+2016-09-21 11:58:21,667 WARN  [org.keycloak.events] (default task-34) type=LOGIN_ERROR, realmId=demo, clientId=vanilla, userId=null, ipAddress=127.0.0.1, error=user_not_found, auth_method=openid-connect, auth_type=code, redirect_uri=http://localhost:8080/vanilla/profile.jsp, code_id=a716ba76-2049-4b8f-a596-28b80878d701
+2016-09-21 12:02:55,509 WARN  [org.keycloak.events] (default task-29) type=LOGIN_ERROR, realmId=demo, clientId=vanilla, userId=null, ipAddress=127.0.0.1, error=user_not_found, auth_method=openid-connect, auth_type=code, redirect_uri=http://localhost:8080/vanilla/profile.jsp, code_id=d0775e47-4f96-46d8-a27e-b22aec4c1dcc, username=ssoadmin
+2016-09-21 15:50:32,435 WARN  [org.keycloak.events] (default task-68) type=LOGIN_ERROR, realmId=demo, clientId=null, userId=null, ipAddress=127.0.0.1, error=expired_code, restart_after_timeout=true
+2016-09-21 15:50:46,433 WARN  [org.keycloak.events] (default task-69) type=LOGIN_ERROR, realmId=demo, clientId=null, userId=null, ipAddress=127.0.0.1, error=invalid_code
+2016-09-21 15:50:53,137 WARN  [org.keycloak.events] (default task-70) type=LOGIN_ERROR, realmId=demo, clientId=vanilla, userId=null, ipAddress=127.0.0.1, error=user_not_found, auth_method=openid-connect, auth_type=code, redirect_uri=http://localhost:8080/vanilla/profile.jsp, code_id=0e55c99e-2fe6-4c0a-a51d-172b894d6e9b, username=ssoadmin
+2016-09-21 15:52:41,607 WARN  [org.keycloak.events] (default task-87) type=REFRESH_TOKEN_ERROR, realmId=master, clientId=security-admin-console, userId=null, ipAddress=127.0.0.1, error=invalid_token, grant_type=refresh_token, client_auth_method=client-secret
+2016-09-21 20:15:52,034 WARN  [org.keycloak.events] (default task-7) type=REFRESH_TOKEN_ERROR, realmId=master, clientId=security-admin-console, userId=null, ipAddress=127.0.0.1, error=invalid_token, grant_type=refresh_token, client_auth_method=client-secret
+2016-09-21 20:17:26,986 ERROR [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-49) RESTEASY002005: Failed executing POST /admin/realms: org.jboss.resteasy.spi.ReaderException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "realm-public-key" (class org.keycloak.representations.idm.RealmRepresentation), not marked as ignorable (86 known properties: "directGrantFlow", "otpPolicyDigits", "identityProviderMappers", "revokeRefreshToken", "identityProviders", "userFederationMappers", "rememberMe", "adminEventsDetailsEnabled", "registrationFlow", "editUsernameAllowed", "clients", "users", "emailTheme", "realm", "authenticatorConfig", "certificate", "updateProfileOnInitialSocialLogin", "otpPolicyType", "accessCodeLifespanUserAction", "protocolMappers", "id", "accountTheme", "maxDeltaTimeSeconds", "enabledEventTypes", "verifyEmail", "applications", "waitIncrementSeconds", "eventsListeners", "eventsExpiration", "passwordPolicy", "clientTemplates", "registrationAllowed", "notBefore", "otpPolicyAlgorithm", "otpPolicyInitialCounter", "socialProviders", "publicKey", "displayNameHtml", "smtpServer", "offlineSessionIdleTimeout", "adminTheme", "roles", "resetPasswordAllowed", "minimumQuickLoginWaitSeconds", "accessTokenLifespanForImplicitFlow", "enabled", "ssoSessionMaxLifespan", "keycloakVersion", "sslRequired", "supportedLocales" [truncated]])
+ at [Source: io.undertow.servlet.spec.ServletInputStreamImpl@16e2037e; line: 1, column: 44] (through reference chain: org.keycloak.representations.idm.RealmRepresentation["realm-public-key"])
+	at org.jboss.resteasy.core.MessageBodyParameterInjector.inject(MessageBodyParameterInjector.java:184)
+	at org.jboss.resteasy.core.MethodInjectorImpl.injectArguments(MethodInjectorImpl.java:91)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:114)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:138)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:88)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:285)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:264)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:175)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:792)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "realm-public-key" (class org.keycloak.representations.idm.RealmRepresentation), not marked as ignorable (86 known properties: "directGrantFlow", "otpPolicyDigits", "identityProviderMappers", "revokeRefreshToken", "identityProviders", "userFederationMappers", "rememberMe", "adminEventsDetailsEnabled", "registrationFlow", "editUsernameAllowed", "clients", "users", "emailTheme", "realm", "authenticatorConfig", "certificate", "updateProfileOnInitialSocialLogin", "otpPolicyType", "accessCodeLifespanUserAction", "protocolMappers", "id", "accountTheme", "maxDeltaTimeSeconds", "enabledEventTypes", "verifyEmail", "applications", "waitIncrementSeconds", "eventsListeners", "eventsExpiration", "passwordPolicy", "clientTemplates", "registrationAllowed", "notBefore", "otpPolicyAlgorithm", "otpPolicyInitialCounter", "socialProviders", "publicKey", "displayNameHtml", "smtpServer", "offlineSessionIdleTimeout", "adminTheme", "roles", "resetPasswordAllowed", "minimumQuickLoginWaitSeconds", "accessTokenLifespanForImplicitFlow", "enabled", "ssoSessionMaxLifespan", "keycloakVersion", "sslRequired", "supportedLocales" [truncated]])
+ at [Source: io.undertow.servlet.spec.ServletInputStreamImpl@16e2037e; line: 1, column: 44] (through reference chain: org.keycloak.representations.idm.RealmRepresentation["realm-public-key"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:52)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportUnknownProperty(DeserializationContext.java:817)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:958)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1302)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:249)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:136)
+	at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:1410)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:860)
+	at org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider.readFrom(ResteasyJackson2Provider.java:121)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.readFrom(AbstractReaderInterceptorContext.java:61)
+	at org.jboss.resteasy.core.interception.ServerReaderInterceptorContext.readFrom(ServerReaderInterceptorContext.java:60)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:53)
+	at org.jboss.resteasy.security.doseta.DigitalVerificationInterceptor.aroundReadFrom(DigitalVerificationInterceptor.java:34)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:55)
+	at org.jboss.resteasy.plugins.interceptors.encoding.GZIPDecodingInterceptor.aroundReadFrom(GZIPDecodingInterceptor.java:59)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:55)
+	at org.jboss.resteasy.core.MessageBodyParameterInjector.inject(MessageBodyParameterInjector.java:151)
+	... 44 more
+
+2016-09-21 20:24:57,366 ERROR [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-109) RESTEASY002005: Failed executing POST /admin/realms: org.jboss.resteasy.spi.ReaderException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "auth-server-url" (class org.keycloak.representations.idm.RealmRepresentation), not marked as ignorable (86 known properties: "directGrantFlow", "otpPolicyDigits", "identityProviderMappers", "revokeRefreshToken", "identityProviders", "userFederationMappers", "rememberMe", "adminEventsDetailsEnabled", "registrationFlow", "editUsernameAllowed", "clients", "users", "emailTheme", "realm", "authenticatorConfig", "certificate", "updateProfileOnInitialSocialLogin", "otpPolicyType", "accessCodeLifespanUserAction", "protocolMappers", "id", "accountTheme", "maxDeltaTimeSeconds", "enabledEventTypes", "verifyEmail", "applications", "waitIncrementSeconds", "eventsListeners", "eventsExpiration", "passwordPolicy", "clientTemplates", "registrationAllowed", "notBefore", "otpPolicyAlgorithm", "otpPolicyInitialCounter", "socialProviders", "publicKey", "displayNameHtml", "smtpServer", "offlineSessionIdleTimeout", "adminTheme", "roles", "resetPasswordAllowed", "minimumQuickLoginWaitSeconds", "accessTokenLifespanForImplicitFlow", "enabled", "ssoSessionMaxLifespan", "keycloakVersion", "sslRequired", "supportedLocales" [truncated]])
+ at [Source: io.undertow.servlet.spec.ServletInputStreamImpl@41fb933; line: 1, column: 43] (through reference chain: org.keycloak.representations.idm.RealmRepresentation["auth-server-url"])
+	at org.jboss.resteasy.core.MessageBodyParameterInjector.inject(MessageBodyParameterInjector.java:184)
+	at org.jboss.resteasy.core.MethodInjectorImpl.injectArguments(MethodInjectorImpl.java:91)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:114)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:138)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:88)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:285)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:264)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:175)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:792)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "auth-server-url" (class org.keycloak.representations.idm.RealmRepresentation), not marked as ignorable (86 known properties: "directGrantFlow", "otpPolicyDigits", "identityProviderMappers", "revokeRefreshToken", "identityProviders", "userFederationMappers", "rememberMe", "adminEventsDetailsEnabled", "registrationFlow", "editUsernameAllowed", "clients", "users", "emailTheme", "realm", "authenticatorConfig", "certificate", "updateProfileOnInitialSocialLogin", "otpPolicyType", "accessCodeLifespanUserAction", "protocolMappers", "id", "accountTheme", "maxDeltaTimeSeconds", "enabledEventTypes", "verifyEmail", "applications", "waitIncrementSeconds", "eventsListeners", "eventsExpiration", "passwordPolicy", "clientTemplates", "registrationAllowed", "notBefore", "otpPolicyAlgorithm", "otpPolicyInitialCounter", "socialProviders", "publicKey", "displayNameHtml", "smtpServer", "offlineSessionIdleTimeout", "adminTheme", "roles", "resetPasswordAllowed", "minimumQuickLoginWaitSeconds", "accessTokenLifespanForImplicitFlow", "enabled", "ssoSessionMaxLifespan", "keycloakVersion", "sslRequired", "supportedLocales" [truncated]])
+ at [Source: io.undertow.servlet.spec.ServletInputStreamImpl@41fb933; line: 1, column: 43] (through reference chain: org.keycloak.representations.idm.RealmRepresentation["auth-server-url"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:52)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportUnknownProperty(DeserializationContext.java:817)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:958)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1302)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:249)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:136)
+	at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:1410)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:860)
+	at org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider.readFrom(ResteasyJackson2Provider.java:121)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.readFrom(AbstractReaderInterceptorContext.java:61)
+	at org.jboss.resteasy.core.interception.ServerReaderInterceptorContext.readFrom(ServerReaderInterceptorContext.java:60)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:53)
+	at org.jboss.resteasy.security.doseta.DigitalVerificationInterceptor.aroundReadFrom(DigitalVerificationInterceptor.java:34)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:55)
+	at org.jboss.resteasy.plugins.interceptors.encoding.GZIPDecodingInterceptor.aroundReadFrom(GZIPDecodingInterceptor.java:59)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:55)
+	at org.jboss.resteasy.core.MessageBodyParameterInjector.inject(MessageBodyParameterInjector.java:151)
+	... 44 more
+
+2016-09-21 20:26:27,204 ERROR [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-111) RESTEASY002005: Failed executing POST /admin/realms: org.jboss.resteasy.spi.ReaderException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "auth-server-url" (class org.keycloak.representations.idm.RealmRepresentation), not marked as ignorable (86 known properties: "directGrantFlow", "otpPolicyDigits", "identityProviderMappers", "revokeRefreshToken", "identityProviders", "userFederationMappers", "rememberMe", "adminEventsDetailsEnabled", "registrationFlow", "editUsernameAllowed", "clients", "users", "emailTheme", "realm", "authenticatorConfig", "certificate", "updateProfileOnInitialSocialLogin", "otpPolicyType", "accessCodeLifespanUserAction", "protocolMappers", "id", "accountTheme", "maxDeltaTimeSeconds", "enabledEventTypes", "verifyEmail", "applications", "waitIncrementSeconds", "eventsListeners", "eventsExpiration", "passwordPolicy", "clientTemplates", "registrationAllowed", "notBefore", "otpPolicyAlgorithm", "otpPolicyInitialCounter", "socialProviders", "publicKey", "displayNameHtml", "smtpServer", "offlineSessionIdleTimeout", "adminTheme", "roles", "resetPasswordAllowed", "minimumQuickLoginWaitSeconds", "accessTokenLifespanForImplicitFlow", "enabled", "ssoSessionMaxLifespan", "keycloakVersion", "sslRequired", "supportedLocales" [truncated]])
+ at [Source: io.undertow.servlet.spec.ServletInputStreamImpl@451b2bdd; line: 1, column: 43] (through reference chain: org.keycloak.representations.idm.RealmRepresentation["auth-server-url"])
+	at org.jboss.resteasy.core.MessageBodyParameterInjector.inject(MessageBodyParameterInjector.java:184)
+	at org.jboss.resteasy.core.MethodInjectorImpl.injectArguments(MethodInjectorImpl.java:91)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:114)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:138)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:88)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:285)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:264)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:175)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:792)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "auth-server-url" (class org.keycloak.representations.idm.RealmRepresentation), not marked as ignorable (86 known properties: "directGrantFlow", "otpPolicyDigits", "identityProviderMappers", "revokeRefreshToken", "identityProviders", "userFederationMappers", "rememberMe", "adminEventsDetailsEnabled", "registrationFlow", "editUsernameAllowed", "clients", "users", "emailTheme", "realm", "authenticatorConfig", "certificate", "updateProfileOnInitialSocialLogin", "otpPolicyType", "accessCodeLifespanUserAction", "protocolMappers", "id", "accountTheme", "maxDeltaTimeSeconds", "enabledEventTypes", "verifyEmail", "applications", "waitIncrementSeconds", "eventsListeners", "eventsExpiration", "passwordPolicy", "clientTemplates", "registrationAllowed", "notBefore", "otpPolicyAlgorithm", "otpPolicyInitialCounter", "socialProviders", "publicKey", "displayNameHtml", "smtpServer", "offlineSessionIdleTimeout", "adminTheme", "roles", "resetPasswordAllowed", "minimumQuickLoginWaitSeconds", "accessTokenLifespanForImplicitFlow", "enabled", "ssoSessionMaxLifespan", "keycloakVersion", "sslRequired", "supportedLocales" [truncated]])
+ at [Source: io.undertow.servlet.spec.ServletInputStreamImpl@451b2bdd; line: 1, column: 43] (through reference chain: org.keycloak.representations.idm.RealmRepresentation["auth-server-url"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:52)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportUnknownProperty(DeserializationContext.java:817)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:958)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1302)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:249)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:136)
+	at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:1410)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:860)
+	at org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider.readFrom(ResteasyJackson2Provider.java:121)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.readFrom(AbstractReaderInterceptorContext.java:61)
+	at org.jboss.resteasy.core.interception.ServerReaderInterceptorContext.readFrom(ServerReaderInterceptorContext.java:60)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:53)
+	at org.jboss.resteasy.security.doseta.DigitalVerificationInterceptor.aroundReadFrom(DigitalVerificationInterceptor.java:34)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:55)
+	at org.jboss.resteasy.plugins.interceptors.encoding.GZIPDecodingInterceptor.aroundReadFrom(GZIPDecodingInterceptor.java:59)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:55)
+	at org.jboss.resteasy.core.MessageBodyParameterInjector.inject(MessageBodyParameterInjector.java:151)
+	... 44 more
+
+2016-09-21 20:28:14,889 ERROR [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-113) RESTEASY002005: Failed executing POST /admin/realms: org.jboss.resteasy.spi.ReaderException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "realm-public-key" (class org.keycloak.representations.idm.RealmRepresentation), not marked as ignorable (86 known properties: "directGrantFlow", "otpPolicyDigits", "identityProviderMappers", "revokeRefreshToken", "identityProviders", "userFederationMappers", "rememberMe", "adminEventsDetailsEnabled", "registrationFlow", "editUsernameAllowed", "clients", "users", "emailTheme", "realm", "authenticatorConfig", "certificate", "updateProfileOnInitialSocialLogin", "otpPolicyType", "accessCodeLifespanUserAction", "protocolMappers", "id", "accountTheme", "maxDeltaTimeSeconds", "enabledEventTypes", "verifyEmail", "applications", "waitIncrementSeconds", "eventsListeners", "eventsExpiration", "passwordPolicy", "clientTemplates", "registrationAllowed", "notBefore", "otpPolicyAlgorithm", "otpPolicyInitialCounter", "socialProviders", "publicKey", "displayNameHtml", "smtpServer", "offlineSessionIdleTimeout", "adminTheme", "roles", "resetPasswordAllowed", "minimumQuickLoginWaitSeconds", "accessTokenLifespanForImplicitFlow", "enabled", "ssoSessionMaxLifespan", "keycloakVersion", "sslRequired", "supportedLocales" [truncated]])
+ at [Source: io.undertow.servlet.spec.ServletInputStreamImpl@71defffc; line: 1, column: 44] (through reference chain: org.keycloak.representations.idm.RealmRepresentation["realm-public-key"])
+	at org.jboss.resteasy.core.MessageBodyParameterInjector.inject(MessageBodyParameterInjector.java:184)
+	at org.jboss.resteasy.core.MethodInjectorImpl.injectArguments(MethodInjectorImpl.java:91)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:114)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:138)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:88)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:285)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:264)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:175)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:792)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "realm-public-key" (class org.keycloak.representations.idm.RealmRepresentation), not marked as ignorable (86 known properties: "directGrantFlow", "otpPolicyDigits", "identityProviderMappers", "revokeRefreshToken", "identityProviders", "userFederationMappers", "rememberMe", "adminEventsDetailsEnabled", "registrationFlow", "editUsernameAllowed", "clients", "users", "emailTheme", "realm", "authenticatorConfig", "certificate", "updateProfileOnInitialSocialLogin", "otpPolicyType", "accessCodeLifespanUserAction", "protocolMappers", "id", "accountTheme", "maxDeltaTimeSeconds", "enabledEventTypes", "verifyEmail", "applications", "waitIncrementSeconds", "eventsListeners", "eventsExpiration", "passwordPolicy", "clientTemplates", "registrationAllowed", "notBefore", "otpPolicyAlgorithm", "otpPolicyInitialCounter", "socialProviders", "publicKey", "displayNameHtml", "smtpServer", "offlineSessionIdleTimeout", "adminTheme", "roles", "resetPasswordAllowed", "minimumQuickLoginWaitSeconds", "accessTokenLifespanForImplicitFlow", "enabled", "ssoSessionMaxLifespan", "keycloakVersion", "sslRequired", "supportedLocales" [truncated]])
+ at [Source: io.undertow.servlet.spec.ServletInputStreamImpl@71defffc; line: 1, column: 44] (through reference chain: org.keycloak.representations.idm.RealmRepresentation["realm-public-key"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:52)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportUnknownProperty(DeserializationContext.java:817)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:958)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1302)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:249)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:136)
+	at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:1410)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:860)
+	at org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider.readFrom(ResteasyJackson2Provider.java:121)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.readFrom(AbstractReaderInterceptorContext.java:61)
+	at org.jboss.resteasy.core.interception.ServerReaderInterceptorContext.readFrom(ServerReaderInterceptorContext.java:60)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:53)
+	at org.jboss.resteasy.security.doseta.DigitalVerificationInterceptor.aroundReadFrom(DigitalVerificationInterceptor.java:34)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:55)
+	at org.jboss.resteasy.plugins.interceptors.encoding.GZIPDecodingInterceptor.aroundReadFrom(GZIPDecodingInterceptor.java:59)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:55)
+	at org.jboss.resteasy.core.MessageBodyParameterInjector.inject(MessageBodyParameterInjector.java:151)
+	... 44 more
+
+2016-09-21 20:29:11,410 ERROR [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-116) RESTEASY002005: Failed executing POST /admin/realms: org.jboss.resteasy.spi.ReaderException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "realm-public-key" (class org.keycloak.representations.idm.RealmRepresentation), not marked as ignorable (86 known properties: "directGrantFlow", "otpPolicyDigits", "identityProviderMappers", "revokeRefreshToken", "identityProviders", "userFederationMappers", "rememberMe", "adminEventsDetailsEnabled", "registrationFlow", "editUsernameAllowed", "clients", "users", "emailTheme", "realm", "authenticatorConfig", "certificate", "updateProfileOnInitialSocialLogin", "otpPolicyType", "accessCodeLifespanUserAction", "protocolMappers", "id", "accountTheme", "maxDeltaTimeSeconds", "enabledEventTypes", "verifyEmail", "applications", "waitIncrementSeconds", "eventsListeners", "eventsExpiration", "passwordPolicy", "clientTemplates", "registrationAllowed", "notBefore", "otpPolicyAlgorithm", "otpPolicyInitialCounter", "socialProviders", "publicKey", "displayNameHtml", "smtpServer", "offlineSessionIdleTimeout", "adminTheme", "roles", "resetPasswordAllowed", "minimumQuickLoginWaitSeconds", "accessTokenLifespanForImplicitFlow", "enabled", "ssoSessionMaxLifespan", "keycloakVersion", "sslRequired", "supportedLocales" [truncated]])
+ at [Source: io.undertow.servlet.spec.ServletInputStreamImpl@60a8cd49; line: 1, column: 43] (through reference chain: org.keycloak.representations.idm.RealmRepresentation["realm-public-key"])
+	at org.jboss.resteasy.core.MessageBodyParameterInjector.inject(MessageBodyParameterInjector.java:184)
+	at org.jboss.resteasy.core.MethodInjectorImpl.injectArguments(MethodInjectorImpl.java:91)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:114)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:138)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:88)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:285)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:264)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:175)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:792)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "realm-public-key" (class org.keycloak.representations.idm.RealmRepresentation), not marked as ignorable (86 known properties: "directGrantFlow", "otpPolicyDigits", "identityProviderMappers", "revokeRefreshToken", "identityProviders", "userFederationMappers", "rememberMe", "adminEventsDetailsEnabled", "registrationFlow", "editUsernameAllowed", "clients", "users", "emailTheme", "realm", "authenticatorConfig", "certificate", "updateProfileOnInitialSocialLogin", "otpPolicyType", "accessCodeLifespanUserAction", "protocolMappers", "id", "accountTheme", "maxDeltaTimeSeconds", "enabledEventTypes", "verifyEmail", "applications", "waitIncrementSeconds", "eventsListeners", "eventsExpiration", "passwordPolicy", "clientTemplates", "registrationAllowed", "notBefore", "otpPolicyAlgorithm", "otpPolicyInitialCounter", "socialProviders", "publicKey", "displayNameHtml", "smtpServer", "offlineSessionIdleTimeout", "adminTheme", "roles", "resetPasswordAllowed", "minimumQuickLoginWaitSeconds", "accessTokenLifespanForImplicitFlow", "enabled", "ssoSessionMaxLifespan", "keycloakVersion", "sslRequired", "supportedLocales" [truncated]])
+ at [Source: io.undertow.servlet.spec.ServletInputStreamImpl@60a8cd49; line: 1, column: 43] (through reference chain: org.keycloak.representations.idm.RealmRepresentation["realm-public-key"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:52)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportUnknownProperty(DeserializationContext.java:817)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:958)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1302)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:249)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:136)
+	at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:1410)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:860)
+	at org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider.readFrom(ResteasyJackson2Provider.java:121)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.readFrom(AbstractReaderInterceptorContext.java:61)
+	at org.jboss.resteasy.core.interception.ServerReaderInterceptorContext.readFrom(ServerReaderInterceptorContext.java:60)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:53)
+	at org.jboss.resteasy.security.doseta.DigitalVerificationInterceptor.aroundReadFrom(DigitalVerificationInterceptor.java:34)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:55)
+	at org.jboss.resteasy.plugins.interceptors.encoding.GZIPDecodingInterceptor.aroundReadFrom(GZIPDecodingInterceptor.java:59)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:55)
+	at org.jboss.resteasy.core.MessageBodyParameterInjector.inject(MessageBodyParameterInjector.java:151)
+	... 44 more
+
+2016-09-21 21:37:07,146 WARN  [org.keycloak.events] (default task-25) type=REFRESH_TOKEN_ERROR, realmId=master, clientId=security-admin-console, userId=null, ipAddress=127.0.0.1, error=invalid_token, grant_type=refresh_token, client_auth_method=client-secret
+2016-09-21 21:37:43,806 ERROR [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-65) RESTEASY002005: Failed executing POST /admin/realms: org.jboss.resteasy.spi.ReaderException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "auth-server-url" (class org.keycloak.representations.idm.RealmRepresentation), not marked as ignorable (86 known properties: "directGrantFlow", "otpPolicyDigits", "identityProviderMappers", "revokeRefreshToken", "identityProviders", "userFederationMappers", "rememberMe", "adminEventsDetailsEnabled", "registrationFlow", "editUsernameAllowed", "clients", "users", "emailTheme", "realm", "authenticatorConfig", "certificate", "updateProfileOnInitialSocialLogin", "otpPolicyType", "accessCodeLifespanUserAction", "protocolMappers", "id", "accountTheme", "maxDeltaTimeSeconds", "enabledEventTypes", "verifyEmail", "applications", "waitIncrementSeconds", "eventsListeners", "eventsExpiration", "passwordPolicy", "clientTemplates", "registrationAllowed", "notBefore", "otpPolicyAlgorithm", "otpPolicyInitialCounter", "socialProviders", "publicKey", "displayNameHtml", "smtpServer", "offlineSessionIdleTimeout", "adminTheme", "roles", "resetPasswordAllowed", "minimumQuickLoginWaitSeconds", "accessTokenLifespanForImplicitFlow", "enabled", "ssoSessionMaxLifespan", "keycloakVersion", "sslRequired", "supportedLocales" [truncated]])
+ at [Source: io.undertow.servlet.spec.ServletInputStreamImpl@51b1080d; line: 1, column: 38] (through reference chain: org.keycloak.representations.idm.RealmRepresentation["auth-server-url"])
+	at org.jboss.resteasy.core.MessageBodyParameterInjector.inject(MessageBodyParameterInjector.java:184)
+	at org.jboss.resteasy.core.MethodInjectorImpl.injectArguments(MethodInjectorImpl.java:91)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:114)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:138)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:88)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:285)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:264)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:175)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:792)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "auth-server-url" (class org.keycloak.representations.idm.RealmRepresentation), not marked as ignorable (86 known properties: "directGrantFlow", "otpPolicyDigits", "identityProviderMappers", "revokeRefreshToken", "identityProviders", "userFederationMappers", "rememberMe", "adminEventsDetailsEnabled", "registrationFlow", "editUsernameAllowed", "clients", "users", "emailTheme", "realm", "authenticatorConfig", "certificate", "updateProfileOnInitialSocialLogin", "otpPolicyType", "accessCodeLifespanUserAction", "protocolMappers", "id", "accountTheme", "maxDeltaTimeSeconds", "enabledEventTypes", "verifyEmail", "applications", "waitIncrementSeconds", "eventsListeners", "eventsExpiration", "passwordPolicy", "clientTemplates", "registrationAllowed", "notBefore", "otpPolicyAlgorithm", "otpPolicyInitialCounter", "socialProviders", "publicKey", "displayNameHtml", "smtpServer", "offlineSessionIdleTimeout", "adminTheme", "roles", "resetPasswordAllowed", "minimumQuickLoginWaitSeconds", "accessTokenLifespanForImplicitFlow", "enabled", "ssoSessionMaxLifespan", "keycloakVersion", "sslRequired", "supportedLocales" [truncated]])
+ at [Source: io.undertow.servlet.spec.ServletInputStreamImpl@51b1080d; line: 1, column: 38] (through reference chain: org.keycloak.representations.idm.RealmRepresentation["auth-server-url"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:52)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportUnknownProperty(DeserializationContext.java:817)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:958)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1302)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:249)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:136)
+	at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:1410)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:860)
+	at org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider.readFrom(ResteasyJackson2Provider.java:121)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.readFrom(AbstractReaderInterceptorContext.java:61)
+	at org.jboss.resteasy.core.interception.ServerReaderInterceptorContext.readFrom(ServerReaderInterceptorContext.java:60)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:53)
+	at org.jboss.resteasy.security.doseta.DigitalVerificationInterceptor.aroundReadFrom(DigitalVerificationInterceptor.java:34)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:55)
+	at org.jboss.resteasy.plugins.interceptors.encoding.GZIPDecodingInterceptor.aroundReadFrom(GZIPDecodingInterceptor.java:59)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:55)
+	at org.jboss.resteasy.core.MessageBodyParameterInjector.inject(MessageBodyParameterInjector.java:151)
+	... 44 more
+

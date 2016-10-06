@@ -1,0 +1,1 @@
+Red Hat Single Sign-On - Version 7.0.0.GA
